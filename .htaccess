@@ -1,0 +1,13 @@
+
+# HTID:5250572: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:5250572:
+ <filesMatch ".(html|htm|js|css|jpg|png)$">
+	FileETag None
+	<ifModule mod_headers.c>
+		Header unset ETag
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Pragma "no-cache"
+		Header set Expires "Wed, 08 Jan 1975 05:00:00 GMT"
+	</ifModule>
+</filesMatch>

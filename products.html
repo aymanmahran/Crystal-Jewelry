@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html> 
+    
+    <head>
+        <link rel="icon" href="../images/logo.png">
+        <title>Products | Crystal Jewelry :: Feel the beauty</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="JS.js"></script>
+        <script type="text/javascript" src="filter.js"></script>  
+        <script type="text/javascript" src="redirect.js"></script>  
+    </head>
+    
+    <body>
+        <div id="loading"></div>
+<!--        <div id="container">-->
+            <div id="topbar" class="hvr-shadow">
+                <div id="logo">
+                </div>
+                <div id="title">
+                    <span style="font-family:scriptbl;">Crystal Jewelry</span>
+                </div>
+                <div id="menu">
+                    <div class="button button_effect" onClick="window.location='faq.html';">
+                        <span>FAQ</span>
+                    </div>
+                    <div class="button button_effect" onClick="window.location='contact.html';">
+                        <span>Contact</span>
+                    </div>
+                    <div class="button button_effect" onClick="window.location='about.html';">
+                        <span>About us</span>
+                    </div>
+                    <div class="button button_effect" onClick="window.location='order.html';">
+                        <span>Order now</span>
+                    </div>
+                    <div class="button button_effect" onClick="window.location='products.html';">
+                        <span>Products</span>
+                    </div>
+                    <div class="button button_effect" onClick="window.location='index.html';">
+                        <span>Home</span>
+                    </div>
+                </div>
+            </div>
+            <div class="parent" style="height:350px;">
+                <div class="child" style="background-image: url(../images/products_img.png);">
+                </div>
+                <div id="slogan">
+                        <div id="box1" style="height:100px;margin: -50px 0 0 -400px;">
+                            <span style="font-size:80px;font-family:scriptbl;">Products</span>
+                        </div>
+                    </div>
+            </div>
+            <div id="z">
+                <div id="main">
+                    <div style="height:20px;" class="placement">
+                        <div style="width:100%;height:50px;">
+                            <div class="filter_button hvr-outline-in" style="margin-left:0px;" onClick="ring();" id="rg"><b>Rings</b></div>
+                            <div class="filter_button hvr-outline-in" onClick="bracelet();" id="bt"><b>Bracelets</b></div>
+                            <div class="filter_button hvr-outline-in" onClick="necklace();" id="ne"><b>Necklaces</b></div>
+                            <div class="filter_button hvr-outline-in" onClick="earring();" id="eg"><b>Earrings</b></div>
+                            <div class="filter_button hvr-outline-in" style="float:right;padding-left: 0px;padding-right: 0px;margin-right:0px;" id="htl" onClick="pricest(2);">↓</div>
+                            <div class="filter_button hvr-outline-in" style="float:right;padding-left: 0px;padding-right: 0px;" id="lth" onClick="pricest(1);">↑</div>
+                            <div style="font-size:25px;font-family: gothambook;text-align: center;line-height: 50px;float:right;color:#4d0026;" >Price</div>
+                        </div>
+                        <div style="width:100%;height:100%;padding-top: 70px;" id="pro_fill">
+                            <div style='font-family: gothambook;padding-top:20px;text-align:center;color:gray;font-size:30px;'>
+                                Select a product type!
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div style = "width:100%; height:100px; background:#4d0026; position:relative; z-index:2;min-width: 1000px;">
+                <div style ="top:10px;width:223px;font-size:35px;font-family:scriptbl;color:#ffffff; position:absolute; left:50%;margin: 0 0 0 -111px;">Crystal Jewelry</div>
+                <div style ="top:65px;font-size:16px;color:#ffffff;width:255px;position:absolute;left:50%;margin: 0 0 0 -127px;">© Copyright 2018. All Rights Reserved</div>
+            </div>
+<!--        </div>-->
+        
+    </body>
+
+</html>
